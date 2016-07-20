@@ -10,7 +10,7 @@ public class ClientController {
     /**
      * Catch all routes not prefixed with the API context
      */
-    @RequestMapping("/**")
+    @RequestMapping("/client/**")
     public String test() {
         return "client";
     }
