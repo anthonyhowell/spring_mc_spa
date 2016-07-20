@@ -18,7 +18,7 @@ public class ApiConfig {
         AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
         dispatcherServlet.setApplicationContext(applicationContext);
 
-        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(dispatcherServlet, "/api/v1/*");
+        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(dispatcherServlet, "/api/v1/**");
         servletRegistrationBean.setName("api-v1");
         return servletRegistrationBean;
     }

@@ -18,7 +18,7 @@ public class ClientConfig {
         AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
         dispatcherServlet.setApplicationContext(applicationContext);
 
-        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(dispatcherServlet, "/*");
+        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(dispatcherServlet, "/client/**");
         servletRegistrationBean.setName("client");
         return servletRegistrationBean;
     }
