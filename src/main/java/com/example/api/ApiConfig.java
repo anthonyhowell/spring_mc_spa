@@ -12,7 +12,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 public class ApiConfig {
 
     @Bean
-    public ServletRegistrationBean apiV2() {
+    public ServletRegistrationBean apiV1() {
         DispatcherServlet dispatcherServlet = new DispatcherServlet();
 
         AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
